@@ -1,8 +1,10 @@
 /* stylelint-disable @stylistic/selector-list-comma-newline-after */
 
+/* Основные настройки шрифтов для заголовков и логотипа */
 .blog-header-logo {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 2.25rem;
+  font-weight: 900;
 }
 
 .blog-header-logo:hover {
@@ -13,25 +15,43 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+/* Настройки flex-блоков */
 .flex-auto {
   flex: 0 0 auto;
 }
 
+/* Высота карточек превью статей */
 .h-250 { height: 250px; }
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
 
-/* Pagination */
+/* Отступы для пагинации (переключения страниц) */
 .blog-pagination {
   margin-bottom: 4rem;
 }
 
-/* Blog posts */
+/* Настройки отображения самих постов блога */
 .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;
+  font-style: italic;
+}
+
+/* Дополнительные стили для красивого отображения кода */
+pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+  overflow-x: auto;
+}
+
+code {
+  color: #d63384;
+  word-wrap: break-word;
 }
